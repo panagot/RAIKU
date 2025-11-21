@@ -237,7 +237,7 @@ function App() {
         <div className="hero-content">
           <p className="event-badge">Solana Hacker Hotel DevCon 2025</p>
           <h1>
-            What happens when execution is <span>guaranteed</span>?
+            What happens when execution is <span>guaranteed?</span>
           </h1>
           <p className="lede">
             An interactive visualization showing how Raiku's deterministic slot reservations transform

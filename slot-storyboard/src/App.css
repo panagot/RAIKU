@@ -164,10 +164,13 @@ body::before {
 }
 
 .hero h1 span {
-  background: linear-gradient(120deg, #7df1ff, #5c5cff);
+  background: linear-gradient(135deg, #7df1ff 0%, #4ac3ff 30%, #5c5cff 60%, #9475ff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  display: inline-block;
+  position: relative;
+  filter: drop-shadow(0 0 20px rgba(125, 241, 255, 0.4));
 }
 
 .lede {
