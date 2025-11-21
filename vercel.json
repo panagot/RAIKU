@@ -1,0 +1,7 @@
+{
+  "buildCommand": "cd slot-storyboard && npm install && npm run build",
+  "outputDirectory": "slot-storyboard/dist",
+  "installCommand": "cd slot-storyboard && npm install",
+  "framework": null
+}
+
