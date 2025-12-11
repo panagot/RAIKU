@@ -263,6 +263,29 @@ function App() {
             )
           })}
         </nav>
+        
+        {/* External Links */}
+        <div className="sidebar-links">
+          <div className="sidebar-links-divider"></div>
+          <a href="https://www.raiku.com/" target="_blank" rel="noopener noreferrer" className="sidebar-link">
+            <span className="nav-icon">
+              <WebsiteIcon />
+            </span>
+            <span className="nav-label">Website</span>
+          </a>
+          <a href="https://x.com/raikucom" target="_blank" rel="noopener noreferrer" className="sidebar-link">
+            <span className="nav-icon">
+              <TwitterIcon />
+            </span>
+            <span className="nav-label">Twitter</span>
+          </a>
+          <a href="https://docs.raiku.com/" target="_blank" rel="noopener noreferrer" className="sidebar-link">
+            <span className="nav-icon">
+              <DocsIcon />
+            </span>
+            <span className="nav-label">Documentation</span>
+          </a>
+        </div>
       </aside>
 
       {/* Main Content Area */}
@@ -355,11 +378,18 @@ function OverviewView({ setActiveTab }: { setActiveTab: (tab: TabId) => void }) 
   return (
     <div className="overview-section">
       <div className="overview-hero">
-        <h2>What happens when execution is <span>guaranteed?</span></h2>
-        <p className="lede">
+        <div className="hero-badge">
+          <span>Deterministic Execution</span>
+        </div>
+        <h1 className="hero-title">
+          What happens when execution is <span className="gradient-text">guaranteed?</span>
+        </h1>
+        <p className="hero-description">
           An interactive visualization showing how Raiku's deterministic slot reservations transform
-          high-stakes workflows from probabilistic chaos into predictable, institutional-grade operations.
+          high-stakes workflows from <span className="highlight-chaos">probabilistic chaos</span> into 
+          <span className="highlight-order"> predictable, institutional-grade operations</span>.
         </p>
+        <div className="hero-divider"></div>
       </div>
 
       {/* Key Metrics Grid */}
@@ -1364,40 +1394,6 @@ function FAQView() {
             Raiku operates a transparent Slot Marketplace (siQoS) with dynamic pricing based on demand.
             Costs are predictable and typically lower than priority fee bidding wars during congestion.
           </p>
-        </div>
-      </div>
-      
-      {/* External Links */}
-      <div className="faq-links">
-        <h3>Connect with Raiku</h3>
-        <div className="faq-links-grid">
-          <a href="https://www.raiku.com/" target="_blank" rel="noopener noreferrer" className="faq-link-card">
-            <div className="faq-link-icon">
-              <WebsiteIcon />
-            </div>
-            <div>
-              <h4>Website</h4>
-              <p>Visit our website</p>
-            </div>
-          </a>
-          <a href="https://x.com/raikucom" target="_blank" rel="noopener noreferrer" className="faq-link-card">
-            <div className="faq-link-icon">
-              <TwitterIcon />
-            </div>
-            <div>
-              <h4>Twitter</h4>
-              <p>Follow us on X</p>
-            </div>
-          </a>
-          <a href="https://docs.raiku.com/" target="_blank" rel="noopener noreferrer" className="faq-link-card">
-            <div className="faq-link-icon">
-              <DocsIcon />
-            </div>
-            <div>
-              <h4>Documentation</h4>
-              <p>Read the docs</p>
-            </div>
-          </a>
         </div>
       </div>
     </div>
