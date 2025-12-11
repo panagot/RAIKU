@@ -1,13 +1,10 @@
-import { useMemo, useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import './App.css'
 import {
   FinanceIcon,
   AIIcon,
   GamingIcon,
   DePINIcon,
-  SettlementIcon,
-  LightningIcon,
-  TargetIcon,
   GlobeIcon,
   BatchIcon,
   OrderingIcon,
@@ -193,11 +190,6 @@ function App() {
   const [selectedSlot, setSelectedSlot] = useState<SlotBlock | null>(null)
   const [isAnimating, setIsAnimating] = useState(false)
   const [currentTime, setCurrentTime] = useState(0)
-
-  const slots = useMemo(() => {
-    if (mode === 'split') return { raiku: raikuSlots, traditional: traditionalSlots }
-    return mode === 'raiku' ? raikuSlots : traditionalSlots
-  }, [mode])
 
   const timelineLength = 60
 
